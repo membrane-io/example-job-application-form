@@ -22,11 +22,15 @@
                 "params": [
                   {
                     "name": "title",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "canResubmit",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": false
                   }
                 ],
                 "hints": {}
@@ -38,23 +42,33 @@
                 "params": [
                   {
                     "name": "method",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "body",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "path",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "query",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "headers",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   }
                 ],
                 "hints": {
@@ -70,7 +84,9 @@
                 "params": [
                   {
                     "name": "id",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   }
                 ],
                 "hints": {}
@@ -97,23 +113,33 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "pattern",
-                    "type": "String"
+                    "description": "Regex pattern to validate the input",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "multiline",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -125,23 +151,33 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "min",
-                    "type": "Int"
+                    "description": "Minimum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "max",
-                    "type": "Int"
+                    "description": "Maximum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -153,27 +189,39 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "min",
-                    "type": "Int"
+                    "description": "Minimum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "max",
-                    "type": "Int"
+                    "description": "Maximum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "step",
-                    "type": "Float"
+                    "description": "",
+                    "type": "Float",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -185,23 +233,33 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "min",
-                    "type": "Int"
+                    "description": "Minimum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "max",
-                    "type": "Int"
+                    "description": "Maximum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -213,27 +271,39 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "min",
-                    "type": "Int"
+                    "description": "Minimum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "max",
-                    "type": "Int"
+                    "description": "Maximum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "step",
-                    "type": "Float"
+                    "description": "",
+                    "type": "Float",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -245,27 +315,39 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "min",
-                    "type": "Int"
+                    "description": "Minimum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "max",
-                    "type": "Int"
+                    "description": "Maximum date in YYYY-MM-DD format",
+                    "type": "String",
+                    "optional": true
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "step",
-                    "type": "Float"
+                    "description": "",
+                    "type": "Float",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -277,19 +359,27 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "pattern",
-                    "type": "Stringt"
+                    "description": "",
+                    "type": "String",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -301,19 +391,27 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "pattern",
-                    "type": "Stringt"
+                    "description": "",
+                    "type": "String",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -325,15 +423,21 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "Key to store the value",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "Label to display for the input",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   }
                 ],
                 "hints": {}
@@ -345,19 +449,27 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "options",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   }
                 ],
                 "hints": {}
@@ -369,19 +481,27 @@
                 "params": [
                   {
                     "name": "key",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "label",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   },
                   {
                     "name": "required",
-                    "type": "Boolean"
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true
                   },
                   {
                     "name": "options",
-                    "type": "String"
+                    "description": "",
+                    "type": "String",
+                    "optional": false
                   }
                 ],
                 "hints": {}
@@ -447,8 +567,10 @@
                 "params": [
                   {
                     "name": "ui",
+                    "description": "",
                     "type": "Ref",
-                    "ofType": "Ui"
+                    "ofType": "Ui",
+                    "optional": false
                   }
                 ],
                 "hints": {}
@@ -481,11 +603,15 @@
                       "params": [
                         {
                           "name": "key",
-                          "type": "String"
+                          "description": "",
+                          "type": "String",
+                          "optional": false
                         },
                         {
                           "name": "seconds",
-                          "type": "Float"
+                          "description": "",
+                          "type": "Float",
+                          "optional": false
                         }
                       ],
                       "hints": {}
@@ -500,15 +626,21 @@
                       "params": [
                         {
                           "name": "key",
-                          "type": "String"
+                          "description": "",
+                          "type": "String",
+                          "optional": false
                         },
                         {
                           "name": "spec",
-                          "type": "String"
+                          "description": "",
+                          "type": "String",
+                          "optional": false
                         },
                         {
                           "name": "maxCount",
-                          "type": "Int"
+                          "description": "",
+                          "type": "Int",
+                          "optional": false
                         }
                       ],
                       "hints": {}
@@ -520,11 +652,15 @@
                       "params": [
                         {
                           "name": "key",
-                          "type": "String"
+                          "description": "",
+                          "type": "String",
+                          "optional": false
                         },
                         {
                           "name": "seconds",
-                          "type": "String"
+                          "description": "",
+                          "type": "String",
+                          "optional": false
                         }
                       ],
                       "hints": {}

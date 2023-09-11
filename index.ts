@@ -9,11 +9,14 @@ export async function configure() {
     title: "Job application",
     canResubmit: true,
   });
-  
+
   // Create a form field for each question
   const values = Promise.allSettled([
     form.string({ key: "name", label: "Full Name", required: true }),
-    form.checkbox({ key: "confirm-info", label: "Confirm Information Accuracy" }),
+    form.checkbox({
+      key: "confirm-info",
+      label: "Confirm Information Accuracy",
+    }),
     form.select({
       key: "shirt-color",
       label: "Preferred Shirt Color",
@@ -38,18 +41,27 @@ export async function configure() {
     form.time({ key: "start-time", label: "Available Start Time" }),
     form.datetime({ key: "meeting-time", label: "Preferred Meeting Time" }),
     form.number({ key: "age", label: "Age", required: true, min: 18, max: 99 }),
-    form.range({ key: "level-experience", label: "Level of Experience", min: 0, max: 20, step: 1 }),
+    form.range({
+      key: "level-experience",
+      label: "Level of Experience",
+      min: 0,
+      max: 20,
+      step: 1,
+    }),
     form.email({ key: "email", label: "Email Address", required: true }),
-    form.password({ key: "password", label: "Create a Password", required: true }),
+    form.password({
+      key: "password",
+      label: "Create a Password",
+      required: true,
+    }),
   ]);
 
-  console.log('please visit: ', await form.url);
+  console.log("please visit: ", await form.url);
   // Subscribe to the form's submitted event
   form.submitted.$subscribe(root.handler);
 }
 
-export async function handler({ event }) {
+export async function handler(_, { event }) {
   // TODO: Manage the submitted data
   console.log(JSON.stringify(JSON.parse(event), null, 2));
 }
-
